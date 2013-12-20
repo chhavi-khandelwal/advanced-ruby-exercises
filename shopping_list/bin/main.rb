@@ -6,5 +6,6 @@ shopping_list.items do
   add('Computer', 1)
   add('Tv', 1)
   add('Mobile', 2)
+  add('Mobile', 2)
 end
 puts shopping_list.all
