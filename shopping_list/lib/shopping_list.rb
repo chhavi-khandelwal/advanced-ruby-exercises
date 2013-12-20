@@ -1,6 +1,6 @@
 class ShoppingList
   def initialize
-    @items = []
+    @items = Hash.new(0)
   end
 
   def items(&list)
@@ -8,7 +8,7 @@ class ShoppingList
   end
 
   def add(name, quantity)
-    @items << { name => quantity }
+    @items[name] += quantity
   end
 
   def all
